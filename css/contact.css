@@ -1,0 +1,134 @@
+.contact_section .flex_wrap {
+    /* align-items: stretch; */
+    & > div:first-child {
+      padding: 0px;
+    }
+  
+    & > div:last-child {
+      padding-left: 136px;
+    }
+  
+    .contact_cont p{
+      line-height: 36px;
+    }
+    .contact_cont p,  .contact_cont ul li{
+      text-align: left;
+      color: #192953;
+      font-size: 22px;
+      line-height: 30px;
+      margin-left: 50px;
+      font-weight: 100;
+      margin-bottom: 10px;
+    }
+  
+    .contact_cont ul li{
+      margin-bottom: 5px;
+    }
+  
+    .qrDiv {
+      float: left;
+      text-align: left;
+      color: #1f284f;
+      margin-left: 64px;
+      & > img.QRImg{
+        width: 82px;
+      }
+      & > p {
+        font-size: 15px;
+        line-height: 25px;
+        margin-left: 0px;
+        text-align: center;
+      }
+    }
+  
+    .mapImg {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .contact_section .flex_wrap {
+      & > div:last-child {
+        padding-left: 45px;
+      }
+  
+      .contact_cont p,
+      ul {
+        margin-left: 45px;
+      }
+  
+      
+    .contact_cont ul li{
+      margin-left: 0px;
+    }
+  
+      .qrDiv {
+        margin-left: 60px;
+        & p {
+          margin-left: 0px;
+        }
+      }
+    } 
+  }
+  @media (max-width: 991px) {
+    .contact_section .flex_wrap {
+      .contact_cont p,
+      ul {
+        font-size: 24px;
+        margin-left: 35px;
+      }
+  
+      & > div:last-child {
+        padding-left: 0px;
+      }
+  
+      .contact_cont ul li{
+        margin-left: 0px;
+      }
+  
+      .qrDiv {
+        position: absolute;
+        right: 90px;
+        bottom: -20px;
+        & p {
+          font-size: 14px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .contact_section .flex_wrap {
+      .contact_cont p,
+      ul {
+        font-size: 17px;
+        margin-left: 30px;
+        line-height: 26px;
+      }
+      
+  
+      .contact_cont ul li{
+        font-size: 17px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+      }
+  
+      .qrDiv {
+        right: 7px;
+        bottom: 0px;
+        & > img.QRImg{
+          width: 70px;
+        }
+  
+        & p{
+          font-size: 12px;
+          text-align: center;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
